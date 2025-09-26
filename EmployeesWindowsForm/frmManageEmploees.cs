@@ -241,6 +241,11 @@ namespace EmployeesWindowsForm
         {
             _OpenForm(new frmLogin());
         }
+
+        private void btnManageEmployees_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

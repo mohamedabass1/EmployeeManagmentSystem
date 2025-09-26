@@ -14,5 +14,10 @@ namespace EmployeesWindowsForm
         {
             this.Close();
         }
+
+        private void btnManageUsers_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -104,6 +104,7 @@
             this.btnManageUsers.TabIndex = 17;
             this.btnManageUsers.Text = "MANAGE USERS";
             this.btnManageUsers.UseVisualStyleBackColor = false;
+            this.btnManageUsers.Click += new System.EventHandler(this.btnManageUsers_Click);
             // 
             // btnManageEmployees
             // 

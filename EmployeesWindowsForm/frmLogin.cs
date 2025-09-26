@@ -53,6 +53,7 @@ namespace EmployeesWindowsForm
 
         private void pibLinkedIn_Click(object sender, EventArgs e)
         {
+            Process.Start(new ProcessStartInfo { FileName = "https://www.linkedin.com/in/mohamed-abass-157a6a328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app", UseShellExecute = true });
 
         }
     }

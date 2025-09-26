@@ -29,7 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pibLinkedIn = new System.Windows.Forms.PictureBox();
+            this.pibGithub = new System.Windows.Forms.PictureBox();
+            this.pibEmail = new System.Windows.Forms.PictureBox();
             this.lblDate = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -37,23 +41,19 @@
             this.lblClose = new System.Windows.Forms.Label();
             this.chbShowPassword = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pibLinkedIn = new System.Windows.Forms.PictureBox();
-            this.pibGithub = new System.Windows.Forms.PictureBox();
-            this.pibEmail = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibLinkedIn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibGithub)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -71,6 +71,41 @@
             this.panel1.Size = new System.Drawing.Size(422, 555);
             this.panel1.TabIndex = 0;
             // 
+            // pibLinkedIn
+            // 
+            this.pibLinkedIn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibLinkedIn.Image = global::EmployeesWindowsForm.Properties.Resources.LinkedIn;
+            this.pibLinkedIn.Location = new System.Drawing.Point(246, 506);
+            this.pibLinkedIn.Name = "pibLinkedIn";
+            this.pibLinkedIn.Size = new System.Drawing.Size(38, 37);
+            this.pibLinkedIn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibLinkedIn.TabIndex = 16;
+            this.pibLinkedIn.TabStop = false;
+            this.pibLinkedIn.Click += new System.EventHandler(this.pibLinkedIn_Click);
+            // 
+            // pibGithub
+            // 
+            this.pibGithub.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibGithub.Image = global::EmployeesWindowsForm.Properties.Resources.Github;
+            this.pibGithub.Location = new System.Drawing.Point(180, 506);
+            this.pibGithub.Name = "pibGithub";
+            this.pibGithub.Size = new System.Drawing.Size(38, 37);
+            this.pibGithub.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibGithub.TabIndex = 15;
+            this.pibGithub.TabStop = false;
+            this.pibGithub.Click += new System.EventHandler(this.pibGithub_Click);
+            // 
+            // pibEmail
+            // 
+            this.pibEmail.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibEmail.Image = global::EmployeesWindowsForm.Properties.Resources.Email;
+            this.pibEmail.Location = new System.Drawing.Point(114, 506);
+            this.pibEmail.Name = "pibEmail";
+            this.pibEmail.Size = new System.Drawing.Size(38, 37);
+            this.pibEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibEmail.TabIndex = 14;
+            this.pibEmail.TabStop = false;
+            // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
@@ -81,14 +116,24 @@
             this.lblDate.TabIndex = 13;
             this.lblDate.Text = "Date";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::EmployeesWindowsForm.Properties.Resources.photo_2025_08_04_23_40_12;
+            this.pictureBox1.Location = new System.Drawing.Point(133, 115);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(136, 104);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Zilla Slab Medium", 14.2F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(36, 313);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(353, 29);
+            this.label1.Size = new System.Drawing.Size(364, 29);
             this.label1.TabIndex = 11;
             this.label1.Text = "Employee Managment System";
             // 
@@ -171,37 +216,6 @@
             this.label4.TabIndex = 17;
             this.label4.Text = "Login Account";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(124, 285);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 29);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Password";
-            // 
-            // txtUserName
-            // 
-            this.txtUserName.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.txtUserName.ForeColor = System.Drawing.Color.Black;
-            this.txtUserName.Location = new System.Drawing.Point(119, 204);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(365, 34);
-            this.txtUserName.TabIndex = 12;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(124, 161);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(144, 29);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "User Name";
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::EmployeesWindowsForm.Properties.Resources.icons8_password_48;
@@ -222,50 +236,37 @@
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
             // 
-            // pibLinkedIn
+            // label2
             // 
-            this.pibLinkedIn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pibLinkedIn.Image = global::EmployeesWindowsForm.Properties.Resources.LinkedIn;
-            this.pibLinkedIn.Location = new System.Drawing.Point(246, 506);
-            this.pibLinkedIn.Name = "pibLinkedIn";
-            this.pibLinkedIn.Size = new System.Drawing.Size(38, 37);
-            this.pibLinkedIn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pibLinkedIn.TabIndex = 16;
-            this.pibLinkedIn.TabStop = false;
-            this.pibLinkedIn.Click += new System.EventHandler(this.pibLinkedIn_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(124, 285);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(128, 29);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Password";
             // 
-            // pibGithub
+            // txtUserName
             // 
-            this.pibGithub.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pibGithub.Image = global::EmployeesWindowsForm.Properties.Resources.Github;
-            this.pibGithub.Location = new System.Drawing.Point(180, 506);
-            this.pibGithub.Name = "pibGithub";
-            this.pibGithub.Size = new System.Drawing.Size(38, 37);
-            this.pibGithub.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pibGithub.TabIndex = 15;
-            this.pibGithub.TabStop = false;
-            this.pibGithub.Click += new System.EventHandler(this.pibGithub_Click);
+            this.txtUserName.Font = new System.Drawing.Font("Tahoma", 13F);
+            this.txtUserName.ForeColor = System.Drawing.Color.Black;
+            this.txtUserName.Location = new System.Drawing.Point(119, 204);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(365, 34);
+            this.txtUserName.TabIndex = 12;
+            this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
             // 
-            // pibEmail
+            // label3
             // 
-            this.pibEmail.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pibEmail.Image = global::EmployeesWindowsForm.Properties.Resources.Email;
-            this.pibEmail.Location = new System.Drawing.Point(114, 506);
-            this.pibEmail.Name = "pibEmail";
-            this.pibEmail.Size = new System.Drawing.Size(38, 37);
-            this.pibEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pibEmail.TabIndex = 14;
-            this.pibEmail.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::EmployeesWindowsForm.Properties.Resources.photo_2025_08_04_23_40_12;
-            this.pictureBox1.Location = new System.Drawing.Point(133, 115);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(136, 104);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(124, 161);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(144, 29);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "User Name";
             // 
             // frmLogin
             // 
@@ -282,14 +283,14 @@
             this.Text = "frmLogin";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibLinkedIn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibGithub)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibEmail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

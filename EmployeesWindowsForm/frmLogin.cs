@@ -56,5 +56,10 @@ namespace EmployeesWindowsForm
             Process.Start(new ProcessStartInfo { FileName = "https://www.linkedin.com/in/mohamed-abass-157a6a328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app", UseShellExecute = true });
 
         }
+
+        private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

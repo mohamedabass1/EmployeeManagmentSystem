@@ -138,7 +138,6 @@
             this.btnDashBoard.TabIndex = 15;
             this.btnDashBoard.Text = "DASHBOARD";
             this.btnDashBoard.UseVisualStyleBackColor = false;
-            this.btnDashBoard.Click += new System.EventHandler(this.btnDashBoard_Click);
             // 
             // frmMainForm
             // 

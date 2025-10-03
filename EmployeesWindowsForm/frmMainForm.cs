@@ -15,7 +15,9 @@ namespace EmployeesWindowsForm
             this.Close();
         }
 
+        private void btnDashBoard_Click(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }
